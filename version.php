@@ -19,14 +19,15 @@
  *
  * @package   block_links
  * @copyright 2010 Stephen Bourget
+ * @copyright 2026 Ldesign Media (Moodle 5.x maintenance)
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2026030600;
+$plugin->version = 2026090200;
 $plugin->requires = 2025040900;
 $plugin->component = 'block_links';
 
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = "M5.0 (2026030600)";  // User-friendly version number.
+$plugin->release = "M5.0 (2026090200)";  // User-friendly version number.

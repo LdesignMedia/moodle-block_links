@@ -87,7 +87,7 @@ class link_followed extends \core\event\base {
     protected function validate_data() {
         parent::validate_data();
         // Make sure this class is never used without proper object details.
-        if (!$this->contextlevel === CONTEXT_SYSTEM) {
+        if ($this->contextlevel !== CONTEXT_SYSTEM) {
             throw new \coding_exception('Context level must be CONTEXT_SYSTEM.');
         }
     }

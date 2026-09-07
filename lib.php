@@ -60,25 +60,25 @@ function block_links_check_permissions($link) {
 
     switch ($blockconfig->profile_field) {
         case BLOCK_LINKS_INSTITUTION:
-            if ($link->department == $USER->institution) {
+            if ($link->department == ($USER->institution ?? '')) {
                 return true;
             }
             break;
 
         case BLOCK_LINKS_DEPARTMENT:
-            if ($link->department == $USER->department) {
+            if ($link->department == ($USER->department ?? '')) {
                 return true;
             }
             break;
 
         case BLOCK_LINKS_CITY:
-            if ($link->department == $USER->city) {
+            if ($link->department == ($USER->city ?? '')) {
                 return true;
             }
             break;
 
         case BLOCK_LINKS_COUNTRY:
-            if ($link->department == $USER->country) {
+            if ($link->department == ($USER->country ?? '')) {
                 return true;
             }
             break;

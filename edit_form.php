@@ -73,9 +73,10 @@ class link_edit_form extends moodleform {
     /**
      * Constructor.
      * @param string $actionurl
-     * @param int $id
+     * @param bool $isadd Whether the form is adding a new link (unused, kept for call compatibility).
+     * @param int $id The id of the link being edited (0 when adding).
      */
-    public function __construct($actionurl, $id) {
+    public function __construct($actionurl, $isadd = false, $id = 0) {
         $this->id = $id;
         parent::__construct($actionurl);
     }
